@@ -8,6 +8,10 @@ The r, g, and b variables are floats rather than ints, bools, or strings as they
 
 ### W3
 Table #4: If we were building a rhythmn game, and were writing a method named DidPlayerHitBeat that tells you whether or not the player accurately hit a beat based on the time that they pressed a key, we decided to have our parameters be floats. We additionally decided our return type or output would be a boolean. However, we did not come up with specific numbers for our floats. A metaphor to explain the relationship between classes and Components would be that classes are the instruction manual to components. In this case the components may be the object that the classes are a manual to, such as, perhaps, Ikea furniture pieces. I believed the balls in the scene get extremely bright after bouncing too many times as there is not a cap on the level of brightness that the balls can reach, and their brightness is never reset by the code.
+
+### W4
+Table #1: Line 5 is a member variable of the class CatW4, and the type is a float. Line 22 is calling a method, "Get.Axis", in order to call the vertical axis;it is recieving input from the player. Line 25 is moving the game object that it is being called on.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 

@@ -54,7 +54,7 @@ public class BallW3: MonoBehaviour
     //      return a value of 1.5,
     //      otherwise, return a value of 1.0. 
 
-    //private ??? GetColorMultiplier(??? ???, ??? ???)
+    private float GetColorMultiplier(??? ???, ??? ???)
     //{
         // write the method body here!
         
