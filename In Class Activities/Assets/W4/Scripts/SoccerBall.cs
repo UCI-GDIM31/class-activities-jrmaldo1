@@ -7,6 +7,8 @@ public class SoccerBall : MonoBehaviour
     [SerializeField] private TMP_Text _pointsText;
     [SerializeField] private TMP_Text _timeText;
     [SerializeField] private ParticleSystem _goalVFX;
+    int numberPoints = 0;
+    float time = 0;
 
     // STEP 1 -----------------------------------------------------------------
     // The OnTriggerEnter method is a collision method called by Unity that
@@ -34,7 +36,11 @@ public class SoccerBall : MonoBehaviour
         //
         // Then, move your Debug.Log() statement so that it's only called if
         //      the colliding object has the "Goal" tag.
-
+        if (collider.gameObject.tag == "Goal")
+        {
+            MadeGoal();
+            Debug.Log ("Goal reached!");
+        }
 
         // STEP 2 -------------------------------------------------------------
     }
@@ -59,10 +65,17 @@ public class SoccerBall : MonoBehaviour
         // Call Play on _goalVFX.
 
         // STEP 4 -------------------------------------------------------------
-    
-    
-    // STEP 3 -----------------------------------------------------------------
 
+
+    // STEP 3 -----------------------------------------------------------------
+    void MadeGoal()
+    {
+         Debug.Log ("Goal reached!");
+            _goalVFX.Play();
+            numberPoints++;
+            _pointsText.text = numberPoints.ToString();
+            time = 0;
+    }
 
     // STEP 5 -----------------------------------------------------------------
     // I am doing something evil, but I believe in you.
@@ -80,6 +93,11 @@ public class SoccerBall : MonoBehaviour
     //
     // STEP 5 -----------------------------------------------------------------
     
+    
+   
+    //{
+    //    MadeGoal();
+    //}
 
     // STEP 6 -----------------------------------------------------------------
     // Like the last step, these flags do NOT show you where to put all of the
@@ -96,4 +114,9 @@ public class SoccerBall : MonoBehaviour
     //      2. Use the MadeGoal method to reset your
     //              time variable when the player makes a goal. 
     // STEP 6 -----------------------------------------------------------------
+     private void Update()
+     {
+        time += Time.deltaTime;
+        _timeText.text = "Time since last goal" + time.ToString();
+     }
 }
