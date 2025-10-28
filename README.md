@@ -13,7 +13,7 @@ Table #4: If we were building a rhythmn game, and were writing a method named Di
 Table #1: Line 5 is a member variable of the class CatW4, and the type is a float. Line 22 is calling a method, "Get.Axis", in order to call the vertical axis;it is recieving input from the player. Line 25 is moving the game object that it is being called on. We decided to add rigid bodies to the cat and the ball, as both need to collide, and the ball must bounce off the cat. Additionally, we checked Is Trigger on the goal as we wanted to know when the ball would has reached the goal zone. We did have to adjust the constraints on the cat and ball, as they initially were rotating into space.
 
 ### W5
-My question about vectors was in relation to how the positive and negative infinity vectors worked. The answer I recieved from a tablemate was that the vectors determined that they would extend infinitly in either a negative or positive direction.
+My question about vectors was in relation to how the positive and negative infinity vectors worked. The answer I recieved from a tablemate was that the vectors determined that they would extend infinitly in either a negative or positive direction. For our variables we will need a transform, speed, and movement variable that will each have to be serialized. Many of the variables may be similar to those existing in the Cat class. There should also be an Update() method and Start() method in use as the AI should begin moving at the start of the game, and so that its movement is updated every frame.
 
 ## Open-Source Assets
 ### W1
