@@ -6,6 +6,7 @@ public class CatW5 : MonoBehaviour
     [SerializeField] private float _moveSpeed = 1.0f;
     [SerializeField] private float _turnSpeed = 1.0f;
     [SerializeField] private Animator _animator;
+    [SerializeField] private int direction =1;
 
     private string _isWalkingName = "IsWalking";
 
@@ -45,12 +46,28 @@ public class CatW5 : MonoBehaviour
 
         Vector3 translation = Vector3.zero;
 
+if (_flipWSControls == false)
+    {
+        if (Input.GetKey(KeyCode.W))
         {
             transform.position += Vector3.back * Time.deltaTime;
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
             transform.position += Vector3.forward * Time.deltaTime;
         }
-        
-
+    }
+    if (_flipWSControls == true) direction = -1;
+    {
+         if (Input.GetKey(KeyCode.W))
+        {
+            transform.position += Vector3.back * Time.deltaTime * direction;
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            transform.position += Vector3.forward * Time.deltaTime * direction;
+        }
+    }
 
         // STEP 1 & 2 ---------------------------------------------------------
 
