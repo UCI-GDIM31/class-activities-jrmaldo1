@@ -24,6 +24,7 @@ public class BatManager : MonoBehaviour
     // STEP 3 -----------------------------------------------------------------
 
     [SerializeField] private float[] _newTextTimers;
+    [SerializeField] private string[] _messages;
 
     // ------------------------------------------------------------------------
     private void Start()
@@ -69,9 +70,9 @@ public class BatManager : MonoBehaviour
         for (int i = 0; i < _bats.Length; i++)
         {
             BatW6 bat = _bats[i];
-            if (Vector3.Distance(bat.transform.position,) <=_interactDistance)
+            if (Vector3.Distance(bat.transform.position, _playerTransform.position) <= _interactDistance)
             {
-                bat.Runaway(_player.position)
+                _bats.EnableChase(_playerTransform.position);
             }
         }
 
