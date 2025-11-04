@@ -15,6 +15,9 @@ Table #1: Line 5 is a member variable of the class CatW4, and the type is a floa
 ### W5
 My question about vectors was in relation to how the positive and negative infinity vectors worked. The answer I recieved from a tablemate was that the vectors determined that they would extend infinitly in either a negative or positive direction. For our variables we will need a transform, speed, and movement variable that will each have to be serialized. Many of the variables may be similar to those existing in the Cat class. There should also be an Update() method and Start() method in use as the AI should begin moving at the start of the game, and so that its movement is updated every frame.
 
+### W6
+My category assignment was "Other Tools" and here is my [finished doc](https://docs.google.com/document/d/1_oQY0junK3b37PITxN8uItEEPKJGHvci47NArvtUxiQ/edit?tab=t.0)
+For the Batw6 Class activity we decided that the one of the member variables we would need would be a speed variable, and for methods we would need the Start() and Update() methods. Additionally, we may use the GameObject.SetActive() method as well. The Start() method should allow for an action to occur as the game starts, the Update() method should should allow us to record and update the bat's movement in real time or every frame, and the GameObject.SetActive() method will allow us to enable and disable sprites as necessary.
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
