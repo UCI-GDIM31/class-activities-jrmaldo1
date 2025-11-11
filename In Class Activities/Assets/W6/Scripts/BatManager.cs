@@ -70,11 +70,11 @@ public class BatManager : MonoBehaviour
         for (int i = 0; i < _bats.Length; i++)
         {
             BatW6 bat = _bats[i];
-            if (Vector3.Distance(bat.transform.position, _playerTransform.position) <= _interactDistance & _overlapDistance)
-            {
-                bat.EnableChase(_playerTransform.position);
-                CreateReactions();
-            }
+           // if (Vector3.Distance(bat.transform.position, _playerTransform.position) <= _interactDistance & _overlapDistance)
+          //  {
+           //     bat.EnableChase(_playerTransform.position);
+          //      CreateReactions();
+           // }
         }
 
         // STEP 4
