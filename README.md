@@ -21,7 +21,7 @@ For the Batw6 Class activity we decided that the one of the member variables we 
 
 ### W7
 In my group my category assignment for our game was the environment. Here is a link to [the doc](https://docs.google.com/document/d/1RbOJV14KBQmt5sQBiYGuODTakWBMyocLs59OTx8vLRQ/edit?usp=sharing)
-The issue we found in step 2 was that the transform.position part of the line of code was supposed to be a transform.Translate. This is done in order to prevent the W and S keys from controlling the muskrat to the left and right.
+The issue we found in step 2 was that the transform.position part of the line of code was supposed to be a transform.Translate. This is done in order to prevent the W and S keys from controlling the muskrat to the left and right. The transform.position moves the game object on the world's plane preventing the muskrat from moving properly.
 
 ## Open-Source Assets
 ### W1
