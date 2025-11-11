@@ -18,6 +18,11 @@ My question about vectors was in relation to how the positive and negative infin
 ### W6
 My category assignment was "Other Tools" and here is my [finished doc](https://docs.google.com/document/d/1_oQY0junK3b37PITxN8uItEEPKJGHvci47NArvtUxiQ/edit?tab=t.0)
 For the Batw6 Class activity we decided that the one of the member variables we would need would be a speed variable, and for methods we would need the Start() and Update() methods. Additionally, we may use the GameObject.SetActive() method as well. The Start() method should allow for an action to occur as the game starts, the Update() method should should allow us to record and update the bat's movement in real time or every frame, and the GameObject.SetActive() method will allow us to enable and disable sprites as necessary.
+
+### W7
+In my group my category assignment for our game was the environment. Here is a link to [the doc](https://docs.google.com/document/d/1RbOJV14KBQmt5sQBiYGuODTakWBMyocLs59OTx8vLRQ/edit?usp=sharing)
+The issue we found in step 2 was that the transform.position part of the line of code was supposed to be a transform.Translate. This is done in order to prevent the W and S keys from controlling the muskrat to the left and right.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
